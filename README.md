@@ -17,7 +17,8 @@ $ sudo make install
 
 # 2. Iverilog
 ```sudo apt-get update
-sudo apt-get install iverilog
+sudo apt-get
+install iverilog
 ```
 <img width="1748" height="512" alt="Screenshot from 2025-09-20 23-32-27" src="https://github.com/user-attachments/assets/4e36d659-c2fd-4a87-a309-dd22e02f921d" />
 # 3. GTKWave
