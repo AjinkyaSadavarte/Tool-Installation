@@ -1,5 +1,21 @@
-# Tool-Installation
-Task 1 and Task 2 for documentation and installation of tools\
+# Task 1:  Summary of the Video 
+
+From Idea to Chip
+The process of creating a chip starts with a high-level plan in C code. This is our "golden" model. We then write the actual hardware design in Verilog, which only includes the processor core. We add other pre-made blocks (called IP blocks) for a full System on Chip (SoC).
+
+We then verify that the Verilog model works just like our C model.
+
+The Verilog code is then converted into a physical layout of gates and transistors, and a special file (GDSII) is created. This file goes through rigorous checks before being sent to the factory for production (tape-out).
+
+After about 14 months, the chips are returned to us (tape-in). We program them and do a final check to make sure the physical chip works as expected.
+
+Microcontroller vs. Microprocessor
+Microcontroller: A complete system on one chip with a CPU, memory, and peripherals. Used for simple, specific tasks (like in the original Arduino).
+
+Microprocessor: Just the CPU core. It needs external memory and other parts to function. Used in more powerful systems like PCs.
+
+# Task 2 : Tool-Installation
+
 # 1. Yosys Installation
 ```
 $ sudo apt-get update
