@@ -46,7 +46,7 @@ $ sudo make install
 ```
 <img width="1721" height="662" alt="Screenshot from 2025-09-20 23-46-21" src="https://github.com/user-attachments/assets/59e0f3cd-5421-4669-8534-a2f025944245" />
 
-# magic
+# 5. magic
 
 ```
 $ sudo apt-get install m4
@@ -66,7 +66,7 @@ make install
 <img width="3026" height="1930" alt="Screenshot from 2025-09-20 23-48-20" src="https://github.com/user-attachments/assets/1e74bd78-b592-4a3a-803d-e370041c2f41" />
 
 
-# OpenLANE
+# 6. OpenLANE
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -83,10 +83,20 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo reboot
 ```
-After reboot, do the following
+After reboot, run the following code
 ```
 docker run hello-world
 ```
+# Below steps installs PDKs and Tools
+```
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+
+
 
 
 
