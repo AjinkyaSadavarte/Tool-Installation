@@ -49,7 +49,6 @@ $ sudo make install
 # magic
 
 ```
-magic
 $ sudo apt-get install m4
 $ sudo apt-get install tcsh
 $ sudo apt-get install csh
@@ -67,6 +66,27 @@ make install
 <img width="3026" height="1930" alt="Screenshot from 2025-09-20 23-48-20" src="https://github.com/user-attachments/assets/1e74bd78-b592-4a3a-803d-e370041c2f41" />
 
 
+# OpenLANE
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install -y build-essential python3 python3-venv python3-pip make gitsudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o
+/usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg]
+https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee
+/etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo docker run hello-world
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot
+```
+After reboot, do the following
+```
+docker run hello-world
+```
 
 
 
